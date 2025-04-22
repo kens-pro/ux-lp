@@ -276,12 +276,15 @@
             border-top: 1px solid #eee;
         }
         .piano-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
+    width: auto;
+    height: 200px; /* 高さを統一 */
+    object-fit: contain; /* はみ出さないように調整 */
     margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
     </style>
 </head>
@@ -403,13 +406,13 @@
 
             <div class="piano-models">
                 <div class="piano-model">
-                    <div class="img-placeholder"><br><img src="images/ux1.png" alt="UX10Aのピアノ写真" class="piano-image" width="100%">
+                    <div class="img-placeholder"><br><img src="images/ux1.png" alt="UX10Aのピアノ写真" class="piano-image">
                     </div>
                     <h4>ヤマハ UX10A</h4>
                     <p>高さ121cmのスタンダードモデルながら、X支柱による豊かな響きとタッチが魅力。</p>
                 </div>
                 <div class="piano-model">
-                    <div class="img-placeholder"><br><img src="images/ux3.png" alt="UX10Aのピアノ写真" class="piano-image" width="100%"></div>
+                    <div class="img-placeholder"><br><img src="images/ux3.png" alt="UX10Aのピアノ写真" class="piano-image"></div>
                     <h4>ヤマハ UX30A</h4>
                     <p>高さ131cm。大型の譜面台を備え、レッスンにも最適。深みのある音色が特徴です。</p>
                 </div>
