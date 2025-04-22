@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【5月限定】ヤマハ「UXシリーズ」中古ピアノフェア - 憧れの音色とタッチを</title>
+    <style>
+        /* Basic Reset & Body Style */
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        /* Headings */
+        h1, h2, h3 {
+            color: #1a3a6d; /* ヤマハブルーを意識した色 */
+            margin-bottom: 0.8em;
+        }
+        h1 { font-size: 2.2em; text-align: center; margin-bottom: 1em; }
+        h2 { font-size: 1.8em; border-bottom: 2px solid #e0e0e0; padding-bottom: 0.3em; margin-top: 1.5em;}
+        h3 { font-size: 1.4em; color: #d14d00; /* アクセントカラー */ border-left: 5px solid #d14d00; padding-left: 0.5em; }
+
+        /* Paragraphs */
+        p {
+            margin-bottom: 1em;
+        }
+
+        /* Links */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        .section {
+            padding: 30px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        /* First View (FV) */
+        .fv {
+            text-align: center;
+            padding-bottom: 30px;
+            background: linear-gradient(to bottom, #eaf2ff, #fff); /* 淡いグラデーション */
+            border-bottom: 1px solid #eee;
+        }
+        .fv h1 {
+            color: #1a3a6d;
+             margin-top: 0;
+        }
+        .fv .sub-headline {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        /* Call to Action Buttons */
+        .cta-button-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically on small screens */
+            align-items: center;
+            gap: 15px; /* Spacing between buttons */
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #d14d00; /* CTAボタンの色 */
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            border: none;
+            min-width: 280px; /* Ensure buttons have a good width */
+        }
+        .cta-button:hover {
+            background-color: #a73d00; /* ホバー時の色 */
+            text-decoration: none;
+            color: #fff;
+        }
+        .cta-button.secondary {
+             background-color: #555;
+        }
+         .cta-button.secondary:hover {
+             background-color: #333;
+         }
+        @media (min-width: 600px) {
+            .cta-button-container {
+                flex-direction: row; /* Side-by-side buttons on larger screens */
+                justify-content: center;
+            }
+        }
+
+
+        /* Image Placeholder */
+        .img-placeholder {
+            display: block;
+            width: 100%;
+            max-width: 600px; /* Adjust as needed */
+            height: 350px; /* Adjust as needed */
+            background-color: #e0e0e0;
+            border: 1px dashed #aaa;
+            margin: 20px auto; /* Center the placeholder */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #666;
+            font-size: 1em;
+            font-style: italic;
+        }
+
+        /* Feature Box (e.g., for X-Bracing, Materials) */
+        .feature-box {
+            display: flex;
+            flex-direction: column; /* Stack on small screens */
+            gap: 20px;
+            margin-top: 20px;
+            align-items: center;
+        }
+        @media (min-width: 768px) {
+            .feature-box {
+                flex-direction: row; /* Side-by-side on larger screens */
+                 align-items: flex-start;
+            }
+        }
+        .feature-box .text {
+            flex: 1; /* Takes available space */
+        }
+        .feature-box .img-placeholder {
+            flex-basis: 300px; /* Fixed width for image */
+            height: 200px;
+            margin: 0; /* Reset margin when inside flexbox */
+        }
+
+         /* Target Audience Callouts */
+        .audience-callout {
+            background-color: #f0f8ff; /* Light blue background */
+            border-left: 5px solid #1a3a6d;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .audience-callout strong {
+            color: #1a3a6d;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Why Used Section */
+        .why-used ul {
+            list-style: none;
+            padding: 0;
+        }
+        .why-used li {
+            background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23d14d00" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>') no-repeat left center;
+            padding-left: 30px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        /* Testimonials */
+        .testimonial {
+            background-color: #fffaf0; /* Light yellow background */
+            border-left: 5px solid #d14d00;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            font-style: italic;
+        }
+        .testimonial cite {
+            display: block;
+            margin-top: 5px;
+            font-style: normal;
+            text-align: right;
+            color: #555;
+        }
+
+        /* Offer Section */
+        .offer-box {
+            background-color: #fff8e1; /* Light orange/yellow background */
+            border: 2px dashed #d14d00;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .offer-box .offer-headline {
+            font-size: 1.5em;
+            color: #d14d00;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .offer-box .offer-benefit {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        /* Piano Model Examples */
+        .piano-models {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .piano-model {
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+        .piano-model .img-placeholder {
+             height: 150px;
+             margin-bottom: 10px;
+        }
+        .piano-model h4 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #1a3a6d;
+        }
+
+         /* Support Message */
+         .support-message {
+            background-color: #eaf2ff;
+            padding: 15px;
+            margin-top: 20px;
+            border: 1px solid #c4d7f0;
+            border-radius: 4px;
+            text-align: center;
+         }
+
+        /* Action Section */
+        .action-section {
+            text-align: center;
+        }
+        .action-section p {
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+            border-top: 1px solid #eee;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="fv section">
+            <h1>憧れの音色とタッチを、今こそ。<br>ヤマハ「隠れた名器」UXシリーズ 中古ピアノフェア【5月限定】</h1>
+            <p class="sub-headline">生産完了後も根強い人気。ワンランク上の響きと表現力を、特別な価格で手に入れるチャンス。</p>
+
+            <div class="img-placeholder">ここにUXピアノの美しいメイン画像を挿入<br>(例: 斜めからの全体像、木目のアップなど)</div>
+            <div class="cta-button-container">
+                <a href="#offer" class="cta-button">5月限定 特選UXピアノを見る</a>
+                <a href="#contact" class="cta-button secondary">試弾予約・お問い合わせはこちら</a>
+            </div>
+        </header>
+
+        <section class="intro section">
+            <h2>その一台が、毎日をもっと豊かにする</h2>
+            <p>「良い音のピアノで練習したい」「長く使える確かな品質のピアノが欲しい」「どうせなら、心から満足できる一台を選びたい」… アコースティックピアノ選びには、様々な想いが込められています。そんなあなたに、自信を持っておすすめしたい特別なピアノがあります。</p>
+
+            <div class="audience-callout">
+                <strong>初めてアコースティックピアノを選ぶあなたへ</strong>
+                <p>何を基準に選べばいいか迷いますよね。UXシリーズなら、確かな品質と豊かな表現力で、ピアノを弾く楽しさを存分に味わえます。失敗しない、最初の本格ピアノに。</p>
+            </div>
+
+            <div class="audience-callout">
+                <strong>お子様のために良いピアノをお探しのあなたへ</strong>
+                <p>レッスン用だからこそ、良い音と正しいタッチを。UXシリーズの安定性と耐久性は、お子様の感受性を育み、上達を長くサポートします。</p>
+            </div>
+
+            <div class="audience-callout">
+                <strong>趣味のピアノをもっと楽しみたいあなたへ</strong>
+                <p>心ゆくまで音楽に浸りたいあなたへ。UXシリーズの深みのある音色と、指に応えてくれる繊細なタッチが、日常に豊かな時間をもたらします。</p>
+            </div>
+        </section>
+
+        <section class="about-ux section">
+            <h2>ヤマハ「UXシリーズ」とは？ なぜ選ばれるのか</h2>
+            <p>なぜUXシリーズは「隠れた名器」と呼ばれるのでしょうか？ それは、ヤマハが1970年代後半から1990年代にかけて、技術の粋を集め、主に国内向けに製造した特別なアップライトピアノシリーズだからです。当時から評価の高い人気のUシリーズをベースに、さらなる高品質と性能を追求して作られました。</p>
+
+            <h3>最大の特徴：響きと安定性を生む「X型支柱」</h3>
+            <div class="feature-box">
+                <div class="text">
+                    <p>ピアノの背面、通常は縦に並ぶ支柱が、UXシリーズでは特徴的な「X」の形をしています。これがUXシリーズの心臓部であり、最大の魅力です。</p>
+                    <p>このX型支柱は、グランドピアノに匹敵するほどの弦の強い張力にも耐えうる、極めて頑丈な構造を実現。ピアノ全体をがっしりと支えることで、美しい音の伸びやかさ、豊かな響き、そして長期間にわたる調律の安定性を格段に向上させています。</p>
+                    <ul>
+                        <li><strong>メリット1：豊かな音の伸びと響き</strong> - 支えられた響板が自由に振動し、深みのあるサウンドを生み出します。</li>
+                        <li><strong>メリット2：優れたチューニング安定性</strong> - 構造が強固なため、環境変化に強く、調律が狂いにくくなります。</li>
+                        <li><strong>メリット3：高い耐久性</strong> - ピアノ本体の歪みを抑え、楽器を長持ちさせます。</li>
+                    </ul>
+                </div>
+                <div class="img-placeholder">ここに「X型支柱」の<br>分かりやすいイラスト or 写真を挿入</div>
+                </div>
+
+            <h3>選び抜かれた素材と、響きへのこだわり</h3>
+             <div class="feature-box">
+                 <div class="img-placeholder">ここに高品質な木材(スプルース響板など)や<br>アクション部品のイメージ画像を挿入</div>
+                 <div class="text">
+                    <p><strong>高品質スプルース単板の響板:</strong> ピアノの心臓部である響板には、ヤマハが厳しい基準で選び抜いた高品質なスプルース材を使用。これが豊かで美しい響きの源泉です。</p>
+                    <p><strong>こだわりの弦設計:</strong> モデルによっては、より豊かな低音を実現するためにベース弦が通常より長く設計されています。これにより、深く、力強い低音域を実現します。</p>
+                    <p><strong>高品質なアクション部品:</strong> 鍵盤を押した力がハンマーに伝わるアクション機構にも、Uシリーズよりグレードの高い素材を使用。これにより、軽いタッチでありながら、繊細なニュアンスまで表現できるレスポンスの良さを実現しています。</p>
+                </div>
+            </div>
+
+            <h3>まるで小さなグランドピアノ？ その豊かな音色</h3>
+            <p>UXシリーズの音色は、しばしば標準的なアップライトピアノよりも「深みがある」「温かい」「パワフル」と評されます。秘密はX型支柱による豊かな響きに加え、一部モデルでは前面パネル（上屋根と下前板の間）に設けられた「トーンエスケープ」と呼ばれる隙間。ここから音が直接演奏者や聴衆に向かって抜けるため、よりクリアで立体感のあるサウンドを部屋中に響き渡らせることができるのです。</p>
+             <div class="img-placeholder">ここにUXピアノの前面パネル<br>(トーンエスケープがあればそれが分かるもの)の写真を挿入</div>
+            <p>多くのお客様や専門家から「小さなグランドピアノのような響き」と評価される、その豊かな表現力をぜひ体感してください。</p>
+
+        </section>
+
+        <section class="why-used section">
+            <h2>なぜ今、「中古のUXシリーズ」が選ばれるのか？</h2>
+            <p>高品質なUXシリーズですが、コストのかかるX型支柱などの理由から1990年代に生産が完了しました。だからこそ、中古でしか手に入らない今、その価値が見直されています。</p>
+            <ul>
+                <li><strong>希少な「逸品」に出会えるチャンス</strong><br>生産完了モデルのため、状態の良い個体はますます貴重に。まさに中古市場でしか出会えない特別な一台です。</li>
+                <li><strong>世代を超えて使える、驚きの耐久性</strong><br>高品質な素材とX型支柱による堅牢な造りは、伊達ではありません。適切にメンテナンスされたUXピアノは、これから先、お子様、お孫さんの代まで、長く安心してご愛用いただけます。</li>
+                <li><strong>時が磨いた「熟成された音色」</strong><br>良質な木材は、年月を経ることで「熟成」し、より深みのある、こなれた良い音色になることがあります。これは中古ピアノならではの魅力です。</li>
+                <li><strong>ワンランク上を、賢く手に入れる選択肢</strong><br>新品の同等クラスのピアノと比較して、優れた品質と性能を持つUXシリーズを、よりリーズナブルな価格で手に入れることができます。</li>
+            </ul>
+        </section>
+
+        <section class="testimonials section">
+            <h2>ご愛用者・専門家の声</h2>
+            <div class="testimonial">
+                <p>「子供のレッスン用に中古のUXを購入しました。しっかりした造りで音も良く、先生からも『良いピアノですね』と褒められました。長く使えそうで安心です。」</p>
+                <cite>- お子様のレッスン用に購入されたお客様</cite>
+            </div>
+            <div class="testimonial">
+                <p>「趣味でピアノを再開するにあたり、どうせなら良い音のものを、と探してUXに決めました。タッチが軽やかで弾きやすく、何より音が豊かで弾いていて気持ちが良いです。」</p>
+                <cite>- 大人の趣味でご使用のお客様</cite>
+            </div>
+             <div class="testimonial">
+                <p>「いくつかのピアノを弾き比べましたが、UXの低音の響きと全体のバランスが一番好みでした。アップライトとは思えない表現力があると思います。」</p>
+                <cite>- 試弾されたお客様</cite>
+            </div>
+            <div class="testimonial">
+                <p>「X支柱は構造的に非常に安定しており、チューニングの狂いが少ないのが特徴です。丁寧にメンテナンスすれば、本当に長く使える良いピアノですよ。」</p>
+                <cite>- ピアノ調律技術者</cite>
+            </div>
+            </section>
+
+        <section id="offer" class="offer section">
+            <h2>【5月限定】ヤマハ UXシリーズ 中古ピアノフェア開催中！</h2>
+
+            <div class="offer-box">
+                <div class="offer-headline">憧れのUXシリーズを手に入れる絶好のチャンス！</div>
+                <p>期間中、当店が厳選した高品質なヤマハUXシリーズの中古ピアノを、<strong>5月だけの特別価格</strong>にてご提供いたします。</p>
+                <div class="img-placeholder" style="height: 100px; max-width: 300px;">ここに「フェア開催中！」などの<br>アイキャッチ画像を挿入</div>
+                <div class="offer-benefit">
+                    さらに！期間中のご成約で<br>「高低自在椅子＆お手入れセット」をもれなくプレゼント！
+                </div>
+            </div>
+
+            <h3>特選UXピアノ ラインナップ例</h3>
+            <p>状態の良い人気のモデルを厳選してご用意しました。ぜひ店頭で実際の音色とタッチをお確かめください。（在庫は変動しますので、詳しくはお問い合わせください）</p>
+
+            <div class="piano-models">
+                <div class="piano-model">
+                    <div class="img-placeholder">UX10Aなどの<br><img src="images/★ux1.png" alt="UXシリーズのピアノ画像" width="400"></div>
+                    <h4>ヤマハ UX10A</h4>
+                    <p>高さ121cmのスタンダードモデルながら、X支柱による豊かな響きとタッチが魅力。</p>
+                </div>
+                <div class="piano-model">
+                    <div class="img-placeholder">UX30Aなどの<br>ピアノ写真</div>
+                    <h4>ヤマハ UX30A</h4>
+                    <p>高さ131cm。大型の譜面台を備え、レッスンにも最適。深みのある音色が特徴です。</p>
+                </div>
+                <div class="piano-model">
+                     <div class="img-placeholder">UX50Aなどの<br>ピアノ写真</div>
+                    <h4>ヤマハ UX50A</h4>
+                    <p>高さ131cm。グランドピアノと同じソステヌートペダルを搭載し、より高度な演奏表現が可能。</p>
+                </div>
+            </div>
+
+            <div class="support-message">
+                 <strong>安心してお選びいただくために</strong><br>
+                 当店では、経験豊富な専門技術者が一台一台丁寧に整備・調整を行った、高品質な中古UXピアノのみを取り扱っております。ご購入後も安心の保証付きです。調律やメンテナンスもお任せください。
+            </div>
+        </section>
+
+        <section id="contact" class="action-section section">
+            <h2>さあ、特別な一台との出会いを。</h2>
+            <p>ぜひこの機会に、ヤマハUXシリーズの素晴らしい音色とタッチを体験してみませんか？<br>店頭でのご試弾を心よりお待ちしております。</p>
+            <div class="cta-button-container">
+                 <a href="#offer" class="cta-button">5月限定 特選UXピアノを見る</a>
+                 <a href="tel:XXX-XXX-XXXX" class="cta-button secondary">電話で試弾予約・問い合わせ<br>(XXX-XXX-XXXX)</a>
+                 </div>
+             <div class="contact-info">
+                <p><strong>[あなたの楽器店名]</strong><br>
+                住所: [店舗の住所]<br>
+                電話: [店舗の電話番号]<br>
+                営業時間: [営業時間]<br>
+                定休日: [定休日]</p>
+                </div>
+        </section>
+
+        <footer>
+            <p>&copy; [現在の年] [あなたの楽器店名] All Rights Reserved.</p>
+            </footer>
+
+    </div> </body>
+</html>
