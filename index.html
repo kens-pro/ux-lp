@@ -283,7 +283,29 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    .hero-img {
+    max-width: 100%;      /* コンテナ幅いっぱいに */
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
 }
+
+.hero-img {
+    max-width: 550px;
+    margin: 0 auto 20px;
+}
+
+}
+.hero-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+
+
 
 
     </style>
@@ -296,7 +318,10 @@
             <h1>憧れの音色とタッチを、今こそ。<br>ヤマハ「隠れた名器」UXシリーズ 中古ピアノフェア【5月限定】</h1>
             <p class="sub-headline">生産完了後も根強い人気。ワンランク上の響きと表現力を、特別な価格で手に入れるチャンス。</p>
 
-            <div class="img-placeholder">ここにUXピアノの美しいメイン画像を挿入<br>(例: 斜めからの全体像、木目のアップなど)</div>
+            <div class="hero-img">
+                <img src="images/x3011.jpg" alt="UXのピアノ写真">
+            </div>
+        
             <div class="cta-button-container">
                 <a href="#offer" class="cta-button">5月限定 特選UXピアノを見る</a>
                 <a href="#contact" class="cta-button secondary">試弾予約・お問い合わせはこちら</a>
